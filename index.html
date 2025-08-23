@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Likith R — Portfolio</title>
+  <meta name="description" content="Portfolio of Likith R — BCA student at CAIAS, aspiring to join a US-based company. Frontend & Python developer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f7f9fc; --text:#0f172a; --muted:#5b6574; --accent:#2563eb; --panel:#ffffff; --border:#e5e7eb; --radius:16px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    img{max-width:100%;display:block}
+
+    .wrap{max-width:1080px;margin:0 auto;padding:24px}
+    .grid{display:grid;gap:20px}
+    .two{grid-template-columns:1.6fr 1fr}
+    .card{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);box-shadow:0 10px 30px rgba(15,23,42,.06)}
+    .pad{padding:22px}
+    .muted{color:var(--muted)}
+    .pill{display:inline-block;padding:6px 12px;border-radius:999px;background:#eef2ff;border:1px solid #e0e7ff;color:#3730a3;font-weight:700}
+    .btn{display:inline-block;padding:10px 14px;border-radius:12px;background:var(--accent);color:#fff;font-weight:800;border:0}
+    .btn.ghost{background:transparent;border:1px solid var(--border);color:var(--text)}
+
+    header{position:sticky;top:0;z-index:40;background:rgba(247,249,252,.8);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 8px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,#60a5fa,#93c5fd);color:#0f172a;font-weight:900}
+    .nav a{color:var(--muted);font-weight:700;margin-left:16px}
+    .nav a:hover{color:var(--text)}
+
+    h1,h2,h3{margin:0 0 8px}
+    h1{font-size:36px}
+    h2{font-size:22px;color:#1f2937}
+
+    .avatar{height:320px;border-radius:50%;overflow:hidden;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#e5edff,#f7f9ff)}
+    .avatar img{border-radius:50%;width:280px;height:280px;object-fit:cover}
+    .tags{display:flex;gap:8px;flex-wrap:wrap}
+    .tag{padding:8px 10px;border-radius:10px;background:#f3f4f6;border:1px solid var(--border);font-weight:700}
+
+    .kpi{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+    .kpi .box{background:#ffffff;border:1px solid var(--border);padding:12px;border-radius:12px;text-align:center}
+    .kpi .num{font-size:22px;font-weight:800}
+
+    .cols-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+
+    .contact input,.contact textarea{width:100%;padding:12px;border-radius:10px;border:1px solid var(--border);background:#fff;color:inherit}
+    .contact textarea{min-height:120px}
+
+    footer{color:var(--muted)}
+
+    @media (max-width:980px){.two{grid-template-columns:1fr}.kpi{grid-template-columns:repeat(2,1fr)}.cols-2{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <header>
+    <div class="wrap nav">
+      <div class="brand">
+        <div class="logo">LR</div>
+        <div>
+          <div style="font-weight:800">Likith R</div>
+          <div class="muted" style="font-size:13px">CAIAS • BCA • Aspiring US-based developer</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap" style="padding-top:22px">
+   <!-- HERO -->
+<section class="grid two">
+  <div class="card pad">
+    <span class="pill">Student • CAIAS College</span>
+    <h1>Hi, I'm Likith R</h1>
+    <p class="muted">I’m a BCA student at CAIAS College, strong at coding and a fast learner. I enjoy building clean, user-friendly web apps with <strong>Python</strong> and frontend technologies. I aim to join a <strong>US-based company</strong> and grow as a developer.</p>
+    <div class="tags" style="margin-top:10px">
+      <span class="tag">Python</span>
+      <span class="tag">JavaScript</span>
+      <span class="tag">Frontend</span>
+      <span class="tag">Web Developer</span>
+      <span class="tag">Problem Solving</span>
+    </div>
+    <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
+      <a class="btn" href="#certifications">View Certifications</a>
+      <a class="btn ghost" href="#contact">Contact Me</a>
+    </div>
+  </div>
+  <aside class="card avatar">
+    <!-- Monkey D. Luffy Image -->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIXUy5P2DCz33l03GzyZ6dRNg3PtXIJJWCHw&s" alt="Monkey D. Luffy" />
+  </aside>
+</section>
+
+    <!-- KPI STRIP -->
+    <section style="margin-top:20px">
+      <div class="kpi">
+        <div class="box"><div class="num">5+</div><div class="muted">Academic Projects</div></div>
+        <div class="box"><div class="num">20+</div><div class="muted">Practice Challenges</div></div>
+        <div class="box"><div class="num">100%</div><div class="muted">Learning Mindset</div></div>
+        <div class="box"><div class="num">US</div><div class="muted">Career Goal</div></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="card pad" style="margin-top:20px">
+      <h2>About</h2>
+      <p class="muted">BCA student at CAIAS College with interest in modern web development and Python. I like converting ideas into clean interfaces and building small apps to practice fundamentals like algorithms, data structures, and API integration.</p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="card pad" style="margin-top:20px">
+      <h2>Skills</h2>
+      <div class="tags" style="margin-top:8px">
+        <span class="tag">Python</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">Responsive Design</span>
+        <span class="tag">Accessibility</span>
+        <span class="tag">Git & GitHub</span>
+        <span class="tag">APIs</span>
+        <span class="tag">Debugging</span>
+        <span class="tag">Algorithms</span>
+        <span class="tag">Data Structures</span>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="card pad" style="margin-top:20px">
+      <h2>Education</h2>
+      <ul class="muted" style="margin:8px 0 0 16px">
+        <li><strong>CAIAS College</strong> — Bachelor of Computer Applications (BCA), 5th Semester</li>
+      </ul>
+    </section>
+
+
+
+ <!-- CERTIFICATIONS -->
+<section id="certifications" class="card pad" style="margin-top:20px">
+  <h2>Certifications</h2>
+  <ul class="muted" style="margin:8px 0 0 16px">
+    <li>
+      <strong>Python for Beginners</strong>  
+      [<a href="C:\Users\Likith\Downloads\python.pdf" target="_blank">View</a> | 
+       <a href="C:\Users\Likith\Downloads\python.pdf" download>Download</a>]
+    </li>
+ <li>
+      <strong> Software Engineering Fundamentals</strong> 
+       (<a href="https://verify.onwingspan.com" target="_blank">Verify</a>) 
+       [<a href="C:\Users\Likith\Downloads\se.pdf" target="_blank">View</a> | 
+       <a href="C:\Users\Likith\Downloads\se.pdf" download>Download</a>]
+    </li>
+
+    <li>
+      <strong>Introduction to Data Analytics</strong> 
+      [<a href="C:\Users\Likith\Downloads\DA.pdf" target="_blank">View</a> | 
+       <a href="C:\Users\Likith\Downloads\DA.pdf" download>Download</a>]
+    </li>
+    <li>
+      <strong>Data Analyst 101</strong>
+      [<a href="C:\Users\Likith\Downloads\DA 2.pdf" target="_blank">View</a> | 
+       <a href="C:\Users\Likith\Downloads\DA 2.pdf" download>Download</a>]
+    </li>
+    <li>
+      <strong>Networking Technology</strong> 
+      (<a href="https://www.mygreatlearning.com/certificate/HUHCOPVA" target="_blank">Verify</a>) 
+      [<a href="C:\Users\Likith\Downloads\NT.pdf" target="_blank">View</a> | 
+       <a href="C:\Users\Likith\Downloads\NT.pdf" download>Download</a>]
+    </li>
+  </ul>
+  </section>
+
+
+
+  
+
+
+    <!-- RESUME SNAPSHOT -->
+    <section id="resume" class="card pad" style="margin-top:20px">
+      <h2>Resume Snapshot</h2>
+      <div class="cols-2" style="margin-top:8px">
+        <div>
+          <h3>Strengths</h3>
+          <ul class="muted">
+            <li>High-level programming (Python).</li>
+            <li>Frontend development (HTML/CSS/JS).</li>
+            <li>Fast learning and adaptability.</li>
+            <li>Clean, readable code with fundamentals focus.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Interests</h3>
+          <ul class="muted">
+            <li>Real-world web apps.</li>
+            <li>Performance and accessibility.</li>
+            <li>Open-source collaboration.</li>
+            <li>Modern tooling and frameworks.</li>
+          </ul>
+        </div>
+      </div>
+      <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
+        <a class="btn" href="C:\Users\Likith\Downloads\Likith_R_Resume.pdf" download>Download Resume (PDF)</a>
+        <a class="btn ghost" href="">Hire Me</a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="card pad" style="margin-top:20px">
+      <h2>Contact</h2>
+      <form class="contact" onsubmit="event.preventDefault();window.location='mailto:23bca083@caias.in?subject=Hello%20Likith&body='+encodeURIComponent(msg.value)">
+        <div class="grid two" style="gap:10px">
+          <input placeholder="Your name" required>
+          <input type="email" placeholder="Your email" required>
+        </div>
+        <textarea id="msg" placeholder="Write your message..."></textarea>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:10px">
+          <button class="btn" type="submit">Email Likith</button>
+          <a class="btn ghost" href="#">LinkedIn</a>
+          <a class="btn ghost" href="#">GitHub</a>
+        </div>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer style="margin:24px 0 8px;text-align:center">
+      © <span id="year"></span> Likith R — CAIAS • Aiming for a US-based developer role
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const id=a.getAttribute('href');
+        if(id && id.length>1){e.preventDefault();document.querySelector(id)?.scrollIntoView({behavior:'smooth'});}
+      });
+    });
+  </script>
+</body>
+</html>
